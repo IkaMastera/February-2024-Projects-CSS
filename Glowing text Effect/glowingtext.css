@@ -4,3 +4,21 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+body{
+    background: #262626;
+}
+
+.glowing{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.glowing span{
+    color: #fff;
+    font-size: 10px;
+    color: #fff;
+    display: inline-block;
+}
