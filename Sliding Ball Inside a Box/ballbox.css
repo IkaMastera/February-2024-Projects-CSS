@@ -17,6 +17,7 @@ body{
     background: transparent;
     border: 5px solid #fff;
     border-radius: 3px;
+    animation: 5s box infinite linear;
 }
 
 .box::before{
@@ -45,5 +46,14 @@ body{
     }
     100%{
         transform: translateX(50px) translateY(50px);
+    }
+}
+
+@keyframes box {
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
     }
 }
