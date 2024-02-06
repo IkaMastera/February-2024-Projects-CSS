@@ -1,14 +1,13 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 body{
     background: #fff;
 }
 
-center{
+.center{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -20,4 +19,17 @@ center{
     border-top: 25px solid #f00;
     border-bottom: 25px solid #000;
     border-radius: 50%;
+    animation: bounce 1s infinite linear;
+}
+
+@keyframes bounce {
+    0%{
+        transform: translateY(0) rotate(0deg);
+    }
+    50%{
+        transform: translateY(-200px) rotate(180deg);
+    }
+    100%{
+        transform: translateY(0) rotate(360deg);
+    }
 }
