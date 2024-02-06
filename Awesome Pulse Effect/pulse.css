@@ -22,3 +22,17 @@ body{
     line-height: 84px;
     font-size: 48px;
 }
+
+.pulse::before,
+.pulse::after{
+    content: '';
+    display: block;
+    position: absolute;
+    border: 50%;
+    border: 1px solid #58ea00;
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+}
