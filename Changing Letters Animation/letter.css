@@ -4,3 +4,38 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+body{
+    background: #5245d8;
+}
+
+h1{
+    margin: 250px 0 0 400px;
+    padding: 0;
+    color: #fff;
+    font-size: 5em;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+span::before{
+    content: 'HTML';
+    animation: animate infinite 8s;
+}
+
+@keyframes animate {
+    0%{
+        content: 'HTML';
+    }
+    25%{
+        content: 'CSS'
+    }
+    50%{
+        content: 'Tailwind.css';
+    }
+    75%{
+        content: 'React.js'
+    }
+    100%{
+        content: 'Vue.js'
+    }
+}
