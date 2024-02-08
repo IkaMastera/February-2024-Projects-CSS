@@ -33,6 +33,7 @@ body{
 
 .text{
     position: absolute;
+    cursor: pointer;
 }
 
 .text span{
@@ -56,6 +57,16 @@ body{
     bottom: 0;
 }
 
+.text:hover .horizontal.first{
+    width: 0px;
+    transform: translateX(-1000px);
+}
+
+.text:hover .horizontal.second{
+    width: 0px;
+    transform: translateX(1000px);
+}
+
 .vertical{
     height: 100%;
     width: 6px;
@@ -67,8 +78,18 @@ body{
     transform: translate(-0.75rem, -1000px);
 }
 
-.vertical.first {
+.vertical.second {
     bottom: 0;
     right: 0;
     transform: translate(0.75rem, 1000px);
+}
+
+.text:hover .vertical.first{
+    height: 100%;
+    transform: translate(-0.75rem, 0px);
+}
+
+.text:hover .vertical.second{
+    height: 100%;
+    transform: translate(0.75rem, 0px);
 }
